@@ -1,6 +1,6 @@
 const express = require('express');
-// const { getOrderFromOrderService } = require('./directHttpOrder');
-const { sendMessageToOrder } = require('./sendMsgOrder');
+const { getOrderFromOrderService } = require('./directHttpOrder');
+// const { sendMessageToOrder } = require('./sendMsgOrder');
 
 const app = express();
 app.use(express.json());
