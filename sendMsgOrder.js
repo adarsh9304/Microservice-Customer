@@ -2,6 +2,7 @@ const amqplib=require('amqplib');
 
 async function sendMessageToOrder(message){
    try{
+      console.log('inside the send message to order')
      const rabbitMQ='amqp://rabbitmq:5672'
      const queueName='order_queue';
     
