@@ -1,15 +1,15 @@
 const express = require('express');
 // const { getOrderFromOrderService } = require('./directHttpOrder');
-// const { sendMessageToOrder } = require('./sendMsgOrder');
+const { sendMessageToOrder } = require('./sendMsgOrder');
 
 const app = express();
 app.use(express.json());
 
 app.get('/call-order',async (req,res)=>{
   console.log('inside call order')
-  // const response=await getOrderFromOrderService();
+  const response=await getOrderFromOrderService();
   // await sendMessageToOrder('Customer clicked on order')
-  // res.send(response)
+  res.send(response)
   res.send('Response come from call order')
 })
 
